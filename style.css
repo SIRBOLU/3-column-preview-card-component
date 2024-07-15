@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+p, a{
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Big Shoulders Display", sans-serif;;
+  color: white;
+}
+
+/* #container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 850px;
+} */
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 850px;
+}
+
+.py{
+  padding: 2.5rem 2.5rem 3.5rem 2rem;
+}
+
+img{
+  padding-bottom: 2rem;
+}
+h1{
+  padding-bottom: 1.5rem;
+}
+p{
+  line-height: 1.5rem;
+  padding-bottom: 4rem;
+}
+a{
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+}
+
+#container .one{
+  background-color: var(--bright-orange);
+}
+
+#container .two{
+  background-color: var(--dark-cyan);
+}
+
+#container .three{
+  background-color: var(--very-dark-cyan);
+}
